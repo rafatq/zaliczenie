@@ -22,7 +22,7 @@ class TestS3Storage(unittest.TestCase):
     return S3MediaStorage(s3, bucket_name)
   
   def there_is_file(self):
-    my_file = open('/tmp/test.txt', 'w')
+    my_file = open('/tmp/test.txt', 'w+')
     my_file.write('My test content :D')
     my_file.close()
     
